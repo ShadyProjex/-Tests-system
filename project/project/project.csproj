@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Poppins-Regular.ttf" />
+    <None Remove="Images\add.png" />
+    <None Remove="Images\apply.png" />
+    <None Remove="Images\back.png" />
+    <None Remove="Images\bstoflk.png" />
+    <None Remove="Images\load.png" />
+    <None Remove="Images\login.png" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\logs.png" />
+    <None Remove="Images\next.png" />
+    <None Remove="Images\plus.png" />
+    <None Remove="Images\previous.png" />
+    <None Remove="Images\remove.png" />
+    <None Remove="Images\save.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\apply.png" />
+    <Resource Include="Images\back.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Poppins-Regular.ttf" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\bstoflk.png" />
+    <Resource Include="Images\load.png" />
+    <Resource Include="Images\login.png" />
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\logs.png" />
+    <Resource Include="Images\previous.png" />
+    <Resource Include="Images\remove.png" />
+    <Resource Include="Images\save.png" />
+  </ItemGroup>
+
+</Project>

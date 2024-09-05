@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="project.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:project.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Exam Simulator"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="left"
+                   Margin="0,0,0,20"
+                   FontFamily="/Fonts/#Poppins"/>
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="200">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffc554" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="&#x0a;Authors:&#x0a;Shady Halabi&#x0a;Moshe Ben-Shimol"
+                                   Foreground="White"
+                                   FontSize="26"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+                    </StackPanel>
+
+                    <Image Width="132"
+                           Height="120"
+                           Source="/Images/logs.png"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="252,0,0,0"/>
+                </Grid>
+            </Border>
+
+            <Border Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#ffb73a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Image Width="152"
+                           Height="168"
+                           Source="/Images/logo.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+            </Border>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

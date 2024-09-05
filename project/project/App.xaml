@@ -1,0 +1,44 @@
+﻿<Application x:Class="project.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:project"
+             xmlns:viewModel="clr-namespace:project.MVVM.ViewModel"
+             xmlns:view="clr-namespace:project.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ModernButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:TeacherViewModel}">
+                <view:TeacherView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:StudentViewModel}">
+                <view:StudentView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:LoginViewModel}">
+                <view:LoginView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:ExamEditorViewModel}">
+                <view:ExamEditorView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:StudentExamViewModel}">
+                <view:StudentExamView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:StatisticsDashboardViewModel}">
+                <view:StatisticsDashboardView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
